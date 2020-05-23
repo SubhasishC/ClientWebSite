@@ -4,6 +4,7 @@ import PageTitle from './PageTitle'
 import  Info from './Info'
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Content from './ContentBox';
 
 class HomePage extends React.Component {
     render() {
@@ -30,7 +31,6 @@ class HomePage extends React.Component {
                         <Row>
                             <Info />
                         </Row>
-                        
                         <Row>
                             <Info />
                         </Row>
@@ -40,9 +40,23 @@ class HomePage extends React.Component {
                     </Col>
                 </Row>
                 <Row>
-
                 </Row>
-                
+                <Row>
+                    <Col>
+                        <Content />
+                    </Col>
+                    <Col>
+                        <Content />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <Content />
+                    </Col>
+                    <Col>
+                        <Content />
+                    </Col>
+                </Row>
                 </Container>
             );
     }

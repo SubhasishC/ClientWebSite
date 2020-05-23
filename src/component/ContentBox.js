@@ -1,7 +1,7 @@
 import React from 'react'
 import Box from '@material-ui/core/Box';
 
-const Info = (props) => {
+const Content = (props) => {
     return (
         <Box component="div" whiteSpace="nowrap" style={{padding:'50px',margin : '40px',border: 'solid 1px',borderBlockColor:'black'}}>
                  White Space Nowrap
@@ -9,4 +9,4 @@ const Info = (props) => {
     )
 }
 
-export default Info
+export default Content
