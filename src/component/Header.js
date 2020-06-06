@@ -1,20 +1,20 @@
 import React from 'react';
-
+import { Button } from 'react-bootstrap'
 function Header() {
     return (
-            <nav>
-                    <div style={divStyle} id='top-notification' >
-                        <a style={linkStyle} href="html">Pre Exam1</a> |
-                        <a style={linkStyle} href="ll">Pre Exam2</a>
-                    </div>
-            </nav>
+                <div style={divStyle} id='top-notification'>Register for <b>NAT @99/-</b>  
+                    <span> Offer valid till 7th June 2020</span>
+                    <span class="book">
+                        <a href="nat.html">Book Now</a>
+                    </span>
+                </div>
     )
 }
 
 
 const divStyle = {
-    background: '#cd5c5c',
-    textAlign: 'center',
+    background: '#4287f5',
+    textAlign: 'center'
   }
 
 const linkStyle = {

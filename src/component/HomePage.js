@@ -5,6 +5,9 @@ import  Info from './Info'
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Content from './ContentBox';
+import CustomSlider from './CustomSlider'; 
+import TextField from '@material-ui/core/TextField';
+
 
 class HomePage extends React.Component {
     render() {
@@ -13,51 +16,59 @@ class HomePage extends React.Component {
             { url: "images/2.jpg" },
             { url: "images/3.jpg" },
         ];
+        const student_images = [
+            { url: "student_images/1.jpg" },
+            { url: "student_images/2.jpg" },
+            { url: "student_images/3.jpg" },
+        ];
+        const h1 = 'Heading';
+        const b1 = 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque  tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.';
             return (
-                <Container>
-                <Row>
-                    <PageTitle title='Home page' />
-                </Row>    
-                <Row>
-                    <Col md="auto">
-                        <SimpleImageSlider
-                            style={{ position: 'left',margin: "0 auto", marginTop: "50px" }}
-                            width={600}
-                            height={400}
+                <div>
+                    <SimpleImageSlider
+                            style={{ position: 'left',margin: "0px auto 0px", marginTop: "1px" }}
+                            width={1496}
+                            height={600}
                             images={images}
+                            showBullets={false}
+                            slideDuration={0.5}
                         />
-                    </Col>
-                    <Col md="auto">
-                        <Row>
-                            <Info />
-                        </Row>
-                        <Row>
-                            <Info />
-                        </Row>
-                        <Row>
-                            <Info />
-                        </Row>
-                    </Col>
-                </Row>
+
                 <Row>
+                    <div>
+                        <h1 style={{color: "blue",fontFamily:"sans-serif",textAlign:'center'}}>Lucent Academy</h1>
+                        <h1>It is a great academy to get couching</h1>
+                    </div>
                 </Row>
-                <Row>
+                <Row className="justify-content-md-left">
                     <Col>
-                        <Content />
+                        <Info 
+                            heading={h1}
+                            body={b1}
+                            />
                     </Col>
                     <Col>
-                        <Content />
+                    <Info 
+                            heading={h1}
+                            body={b1}
+                            />
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                        <Content />
+                    <Info 
+                            heading={h1}
+                            body={b1}
+                            />
                     </Col>
                     <Col>
-                        <Content />
+                    <Info 
+                            heading={h1}
+                            body={b1}
+                            />
                     </Col>
                 </Row>
-                </Container>
+                </div>
             );
     }
 }

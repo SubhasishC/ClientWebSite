@@ -1,8 +1,10 @@
 import React from 'react';
 import Header from './component/Header';
-import Navigation from './component/NavigationBar'
+import NavBar from './component/NavBar'
 import Main from './component/Main'
 import Footer from './component/Footer';
+import Navigation from './component/NavigationBar';
+import HomePage from './component/HomePage';
 
 function App() {
   return (
@@ -10,7 +12,7 @@ function App() {
         <Header />
         <Navigation />
         <Main />
-        <Footer />
+
     </div>
    
   );
