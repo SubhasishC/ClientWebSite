@@ -89,7 +89,7 @@ function Navigation () {
                                     <Dropdown.Item eventKey="2">Question Paper</Dropdown.Item>
                                     <Dropdown.Item eventKey="3">Syllabus</Dropdown.Item>
                                 </DropdownButton>
-                                <NavDropdown.Item href="https://www.youtube.com/channel/UChtmcR5qECZli9ddo02IcFQ/videos">Videos</NavDropdown.Item>
+                                <NavDropdown.Item href="media">Videos</NavDropdown.Item>
                              </NavDropdown>
                              <NavDropdown title="Enquiries" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="register">Registration</NavDropdown.Item>

@@ -22,6 +22,7 @@
     "react-simple-image-slider": "^1.0.3",
     "react-strap-grid": "^1.0.1",
     "react-swift-slider": "^6.4.0",
+    "react-youtube": "^7.11.2",
     "reactstrap": "^8.4.1"
   },
   "scripts": {
