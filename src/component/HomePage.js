@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Content from './ContentBox';
 import CustomSlider from './CustomSlider'; 
 import TextField from '@material-ui/core/TextField';
+import Footer from '../component/Footer';
 
 
 class HomePage extends React.Component {
@@ -34,13 +35,13 @@ class HomePage extends React.Component {
                             slideDuration={0.5}
                         />
 
-                <Row>
+                <Row className="justify-content-md-center">
                     <div>
                         <h1 style={{color: "blue",fontFamily:"sans-serif",textAlign:'center'}}>Lucent Academy</h1>
-                        <h1>It is a great academy to get couching</h1>
+                        <h1>It is a great couching academy </h1>
                     </div>
                 </Row>
-                <Row className="justify-content-md-left">
+                <Row className="justify-content-md-center">
                     <Col>
                         <Info 
                             heading={h1}
@@ -68,6 +69,7 @@ class HomePage extends React.Component {
                             />
                     </Col>
                 </Row>
+                <Footer />
                 </div>
             );
     }
