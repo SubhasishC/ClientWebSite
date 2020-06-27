@@ -69,7 +69,6 @@ class HomePage extends React.Component {
                             />
                     </Col>
                 </Row>
-                <Footer />
                 </div>
             );
     }

@@ -1,49 +1,43 @@
 import React from 'react';
 import Faq from "react-faq-component";
+import data from  './data/faq.json'
+import { Row, Container, Col } from 'react-bootstrap'
 
-const data = {
-    title: "FAQ (How it works)",
-    rows: [
-        {
-            title: "Lorem ipsum dolor sit amet,",
-            content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat, 
-              ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus. 
-              In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae. 
-              Fusce sed commodo purus, at tempus turpis.`,
-        },
-        {
-            title: "Nunc maximus, magna at ultricies elementum",
-            content:
-                "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.",
-        },
-        {
-            title: "Curabitur laoreet, mauris vel blandit fringilla",
-            content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem. 
-            Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam. 
-            Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat. 
-            Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
-        },
-        {
-            title: "What is the package version",
-            content: "v1.0.0",
-        },
-    ],
+const faqStyles = {
+     bgColor: 'white',
+    titleTextColor: "#505050",
+    rowTitleColor: "#505050",
+     rowContentColor: 'grey',
+     arrowColor: "black",
 };
- 
+
 const styles = {
-    // bgColor: 'white',
-    titleTextColor: "black",
-    rowTitleColor: "blue",
-    // rowContentColor: 'grey',
-    // arrowColor: "red",
+    container: {
+        padding: '70px 300px 100px 100px'
+    },
+    row: {
+        marginLeft: 0,
+        marginRight: 0
+    },
+    col: {
+        paddingLeft: 0,
+        paddingRight: 0
+    }
 };
  
 class FAQComponent extends React.Component {
     render() {
         return (
-            <div>
-                <Faq data={data} styles={styles} />
-            </div>
+            
+            <Container fluid style={styles.container}>
+            <Row>
+                <Col xl={12}>
+                    <Faq data={data} styles={faqStyles} />
+                </Col>
+                
+            </Row>
+            </Container>
+
         );
     }
 }

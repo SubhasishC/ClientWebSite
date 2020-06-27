@@ -24,7 +24,7 @@ function Header() {
                         <a href="https://www.twitter.com/jamesqquick" className="twitter social">
                             <FontAwesomeIcon icon={faTwitter} size="1x" />
                         </a>
-                        <a href="https://www.youtube.com/c/jamesqquick" className="youtube social" >
+                        <a href="https://www.youtube.com/watch?v=_lPnkEoZ88I" className="youtube social" >
                             <FontAwesomeIcon icon={faYoutube} size="1x" />
                         </a>
                     </span>

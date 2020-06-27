@@ -9,9 +9,11 @@ import HomePage from './component/HomePage';
 function App() {
   return (
     <div>
-        {window.location.pathname === '/home' ? <Header /> : null}  
+        {/* {window.location.pathname === '/home' ? <Header /> : null}   */}
         <Navigation />
         <Main />
+        <Footer />
+
     </div>
    
   );

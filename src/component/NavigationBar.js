@@ -12,13 +12,11 @@ import HomePage from './HomePage'
 import AboutUs from './AboutUs'
 import { Row, Container, Col } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
+import Image from 'react-bootstrap/Image'
 
 const navBarStyle = {
-  position: 'absolute',
-  right: '150px',
-  width: '200px',
-  height: '120px'
-  // background: 'aliceblue'
+  backgroundColor: "#007bff",
+  padding: "20px"
 }
 
 const navLinkStyle = {
@@ -48,9 +46,13 @@ const navDropDownStyle = {
 }
 function Navigation () {
   return (
+    <div style={navBarStyle}>
     <Container fluid>
       <Row>
-        <Col xs lg="6">
+          <Col xs lg="1">
+            <img src="images/circle-cropped.png" alt="Lucent Academy" width="80" height="80" /> 
+          </Col>
+          <Col>
           <Navbar bg='primary' variant='dark' expand='lg'>
             <Navbar.Brand href='home'>Lucent Academy</Navbar.Brand>
           </Navbar>
@@ -125,6 +127,7 @@ function Navigation () {
         </Col>
       </Row>
     </Container>
+    </div>
   )
 }
 
