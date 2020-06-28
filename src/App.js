@@ -1,16 +1,16 @@
 import React from 'react';
 import Header from './component/Header';
-import NavBar from './component/NavBar'
 import Main from './component/Main'
 import Footer from './component/Footer';
 import Navigation from './component/NavigationBar';
 import HomePage from './component/HomePage';
+import NavHeader from './component/NavHeader'
 
 function App() {
   return (
     <div>
         {/* {window.location.pathname === '/home' ? <Header /> : null}   */}
-        <Navigation />
+        <Navigation/>
         <Main />
         <Footer />
 

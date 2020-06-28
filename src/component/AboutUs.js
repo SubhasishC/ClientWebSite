@@ -1,8 +1,5 @@
 import React from 'react';
-import PageTitle from './PageTitle'
-import Content from './ContentBox';
 import { Row, Container, Col } from 'react-bootstrap'
-import style from './style.css';
 import FacultyList from './FacultyList';
 
 const headingStyle = {
@@ -45,8 +42,6 @@ function Aboutus() {
                 </div>
             </Col>
         </Row>
-
-
         </Container>
     )
 }

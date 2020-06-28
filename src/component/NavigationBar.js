@@ -19,108 +19,80 @@ const navBarStyle = {
   padding: "20px"
 }
 
-const navLinkStyle = {
-  textAlign: 'end',
-  fontFamily: 'sans-serif',
-  textTransform: 'uppercase',
-  color: 'blue',
-  font: '600px',
-  margin: '15px',
-  marginBottom: '15px',
-  padding: '8px 10px',
-  borderRadius: '6px',
-  display: 'inline'
+const navBarStyle2 = {
+  backgroundColor: "#fcba03",
+  padding: "20px"
 }
-const navDropDownStyle = {
-  textAlign: 'end',
-  fontFamily: 'sans-serif',
-  textTransform: 'uppercase',
-  color: 'blue',
-  font: '600px',
-  margin: '15px',
-  marginBottom: '15px',
-  padding: '8px 10px',
-  borderRadius: '6px',
-  display: 'inline',
-  position: 'relative'
+
+const navLinkStyle = {
+  color: "black",
+  fontSize : '35px'
+ }
+const navIconStyle = {
+  // padding: '5px 5px 5px 5px'
+}
+const style ={
+  color: 'black'
 }
 function Navigation () {
   return (
     <div style={navBarStyle}>
     <Container fluid>
       <Row>
-          <Col xs lg="1">
-            <img src="images/circle-cropped.png" alt="Lucent Academy" width="80" height="80" /> 
+          <Col xs={1}>
           </Col>
-          <Col>
-          <Navbar bg='primary' variant='dark' expand='lg'>
-            <Navbar.Brand href='home'>Lucent Academy</Navbar.Brand>
-          </Navbar>
+          <Col xs={2}>
+            <img src="images/circle-cropped.png" alt="Lucent Academy" width="80" height="80" style={navIconStyle}/> 
           </Col>
-          <Col>
-          <Navbar bg='primary' variant='dark' expand='lg'>  
+          <Col xs={9}>
+          <Navbar bg='primary' variant='dark' expand='lg' className="mr-sm-2">  
             <Navbar.Toggle aria-controls='basic-navbar-nav' />
             <Navbar.Collapse id='basic-navbar-nav'>
               <Nav className='mr-auto'>
-                <Nav.Link href='home'>HomePage</Nav.Link>
-                <Nav.Link href='aboutus'>AboutUs</Nav.Link>
-                <NavDropdown title='Downloads' id='basic-nav-dropdown'>
+                <Nav.Link href='home'>
+                  <span style={navLinkStyle}>HOME</span>
+                </Nav.Link>
+                <Nav.Link href='aboutus'>
+                <span style={navLinkStyle}>ABOUT US</span>
+                </Nav.Link>
+                <NavDropdown title={<span style={navLinkStyle}>Download</span>} id='basic-nav-dropdown'>
                   <NavDropdown.Item href='download_resources/doc1.pdf'>
-                    Download1
+                    <span style={navLinkStyle}>DOWNLOAD1</span>
                   </NavDropdown.Item>
                   <NavDropdown.Item href='download_resources/doc1.pdf'>
-                    Download2
+                  <span style={navLinkStyle}>DOWNLOAD2</span>
                   </NavDropdown.Item>
                   <NavDropdown.Item href='download_resources/doc1.pdf'>
-                    Download3
+                  <span style={navLinkStyle}>DOWNLOAD3</span>
                   </NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown title='Program' id='basic-nav-dropdown'>
-                  <DropdownButton
-                    key='right'
-                    id={`dropdown-button-drop-1`}
-                    drop='right'
-                    variant='secondary'
-                    title={` APSC/UPSC `}
-                  >
-                    <Dropdown.Item eventKey='1'>CA</Dropdown.Item>
-                    <Dropdown.Item eventKey='2'>Question Paper</Dropdown.Item>
-                    <Dropdown.Item eventKey='3'>Syllabus</Dropdown.Item>
-                  </DropdownButton>
-                  <DropdownButton
-                    key='right'
-                    id={`dropdown-button-drop-1`}
-                    drop='right'
-                    variant='secondary'
-                    title={` Banking  `}
-                  >
-                    <Dropdown.Item eventKey='1'>CA</Dropdown.Item>
-                    <Dropdown.Item eventKey='2'>Question Paper</Dropdown.Item>
-                    <Dropdown.Item eventKey='3'>Syllabus</Dropdown.Item>
-                  </DropdownButton>
-                  <DropdownButton
-                    key='right'
-                    id={`dropdown-button-drop-1`}
-                    drop='right'
-                    variant='secondary'
-                    title={` RBI `}
-                  >
-                    <Dropdown.Item eventKey='1'>CA</Dropdown.Item>
-                    <Dropdown.Item eventKey='2'>Question Paper</Dropdown.Item>
-                    <Dropdown.Item eventKey='3'>Syllabus</Dropdown.Item>
-                  </DropdownButton>
+                <NavDropdown title={<span style={navLinkStyle}>Program</span>} id='basic-nav-dropdown'>
+                  <NavDropdown.Item href='download_resources/doc1.pdf'>
+                    <span style={navLinkStyle}>UPSC</span>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href='apsc'>
+                    <span style={navLinkStyle}>APSC</span>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href='download_resources/doc1.pdf'>
+                    <span style={navLinkStyle}>Banking</span>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href='download_resources/doc1.pdf'>
+                    <span style={navLinkStyle}>RBI</span>
+                  </NavDropdown.Item>
                   <NavDropdown.Item href='media'>Videos</NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown title='Enquiries' id='basic-nav-dropdown'>
+                <NavDropdown title={<span style={navLinkStyle}>Enquiries</span>} id='basic-nav-dropdown'>
                   <NavDropdown.Item href='register'>
-                    Registration
+                    <span style={navLinkStyle}>Registration</span>
                   </NavDropdown.Item>
                   <NavDropdown.Item href='download_resources/doc1.pdf'>
-                    Fee Structure
+                    <span style={navLinkStyle}>Fee Structure</span>  
                   </NavDropdown.Item>
-                  <NavDropdown.Item href='faq'>FAQ</NavDropdown.Item>
+                  <NavDropdown.Item href='faq'>
+                    <span style={navLinkStyle}>FAQ</span> 
+                  </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href='contactus'>Contact Us</Nav.Link>
+                <Nav.Link href='contactus'><span style={navLinkStyle}>Contanct Us</span> </Nav.Link>
               </Nav>
             </Navbar.Collapse>
             </Navbar>

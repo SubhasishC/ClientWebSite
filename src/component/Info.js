@@ -5,11 +5,11 @@ import Media from 'react-bootstrap/Media'
 const Info = (props) => {
     return (
         <Media>
-  <Media.Body>
-    <h5>{props.heading}</h5>
-    <p>{props.body}</p>
-  </Media.Body>
-</Media>
+          <Media.Body>
+            <h5>{props.heading}</h5>
+            <p>{props.body}</p>
+          </Media.Body>
+        </Media>
     )
 }
 

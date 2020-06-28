@@ -5,10 +5,13 @@ import  Info from './Info'
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Content from './ContentBox';
-import CustomSlider from './CustomSlider'; 
+import StudentInfo from './StudentInfoSection'; 
 import TextField from '@material-ui/core/TextField';
 import Footer from '../component/Footer';
 
+const style = {
+    
+}
 
 class HomePage extends React.Component {
     render() {
@@ -26,19 +29,20 @@ class HomePage extends React.Component {
         const b1 = 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque  tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.';
             return (
                 <div>
+                 {/* <Col fluid xs={12}> */}
                     <SimpleImageSlider
                             style={{ position: 'left',margin: "0px auto 0px", marginTop: "1px" }}
-                            width={1496}
+                            width={1596}
                             height={600}
                             images={images}
                             showBullets={false}
                             slideDuration={0.5}
                         />
-
+                {/* </Col> */}
                 <Row className="justify-content-md-center">
                     <div>
-                        <h1 style={{color: "blue",fontFamily:"sans-serif",textAlign:'center'}}>Lucent Academy</h1>
-                        <h1>It is a great couching academy </h1>
+                        <h1 style={{color: "blue",fontFamily:"sans-serif",textAlign:'center', padding: '10px 10px 10px 10px '}}>Lucent Academy</h1>
+                        <h1>It is a great coaching academy </h1>
                     </div>
                 </Row>
                 <Row className="justify-content-md-center">
@@ -69,6 +73,9 @@ class HomePage extends React.Component {
                             />
                     </Col>
                 </Row>
+                <div>
+                    <StudentInfo />
+                </div>
                 </div>
             );
     }

@@ -7,6 +7,8 @@ import FAQComponent from './faq';
 import Registration from './registrationForm'
 import Media from './Media'
 import { Login } from './Login'
+import Content from './CourseContent'
+
 const Main = () => (
   <main>
     <Switch>
@@ -18,6 +20,7 @@ const Main = () => (
       <Route path='/register' component={Registration}/>
       <Route path='/media' component={Media}/>
       <Route path='/login' component={Login}/>
+      <Route path='/apsc' component={Content}/>
     </Switch>
   </main>
 )
