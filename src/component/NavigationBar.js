@@ -50,10 +50,10 @@ function Navigation () {
             <Navbar.Collapse id='basic-navbar-nav'>
               <Nav className='mr-auto'>
                 <Nav.Link href='home'>
-                  <span style={navLinkStyle}>HOME</span>
+                  <span style={navLinkStyle}>Home</span>
                 </Nav.Link>
                 <Nav.Link href='aboutus'>
-                <span style={navLinkStyle}>ABOUT US</span>
+                <span style={navLinkStyle}>About US</span>
                 </Nav.Link>
                 <NavDropdown title={<span style={navLinkStyle}>Download</span>} id='basic-nav-dropdown'>
                   <NavDropdown.Item href='download_resources/doc1.pdf'>

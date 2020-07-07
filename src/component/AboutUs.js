@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Container, Col } from 'react-bootstrap'
 import FacultyList from './FacultyList';
+import YouTube from 'react-youtube';
 
 const headingStyle = {
     color: "#505050",
@@ -8,8 +9,16 @@ const headingStyle = {
     padding: "20px"
   }
 const blockStyle = {
-    padding: "40px"
+    padding: "20px"
 }
+const opts = {
+    height: '290',
+    width: '440',
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+    },
+  };
 function Aboutus() {
     return (
         <Container>
@@ -22,7 +31,7 @@ function Aboutus() {
             </Col>
             <Col xs={3}>
                 <div style={blockStyle}>
-                    <img src="images/circle-cropped.png" alt="Lucent Academy" width="300" height="300" />
+                    <YouTube videoId="ZD3Sb_7zkWA" opts={opts}/>
                 </div>     
             </Col>
         </Row>
