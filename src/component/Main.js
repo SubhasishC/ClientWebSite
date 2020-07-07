@@ -25,7 +25,10 @@ const Main = () => (
       <Route path='/apsc' component={Content}/>
       <Route path='/signIn' component={() => <SignIn name={'Student Login'} />}/>
       <Route path='/signInAsAdmin' component={() => <SignIn name={'Admin Login'} />}/>
+<<<<<<< HEAD
       <Route path='/studentProfile' component={Student}/>
+=======
+>>>>>>> 3000b7adc4ee4848771d87f35e8a028030087d1d
 
     </Switch>
   </main>
