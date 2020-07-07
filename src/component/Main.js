@@ -9,6 +9,7 @@ import Media from './Media'
 import { Login } from './Login'
 import Content from './CourseContent'
 import SignIn from './SignIn'
+import Student from './StudentProfile'
 
 const Main = () => (
   <main>
@@ -24,6 +25,7 @@ const Main = () => (
       <Route path='/apsc' component={Content}/>
       <Route path='/signIn' component={() => <SignIn name={'Student Login'} />}/>
       <Route path='/signInAsAdmin' component={() => <SignIn name={'Admin Login'} />}/>
+      <Route path='/studentProfile' component={Student}/>
 
     </Switch>
   </main>

@@ -42,7 +42,7 @@ class HomePage extends React.Component {
                 <Row className="justify-content-md-center">
                     <div>
                         <h1 style={{color: "blue",fontFamily:"sans-serif",textAlign:'center', padding: '10px 10px 10px 10px '}}>Lucent Academy</h1>
-                        <h1>It is a great coaching academy </h1>
+                        <h1>Coaching Academy </h1>
                     </div>
                 </Row>
                 <Row className="justify-content-md-center">
