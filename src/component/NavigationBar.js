@@ -92,6 +92,14 @@ function Navigation () {
                     <span style={navLinkStyle}>FAQ</span> 
                   </NavDropdown.Item>
                 </NavDropdown>
+                <NavDropdown title={<span style={navLinkStyle}>Login</span>} id='basic-nav-dropdown'>
+                  <NavDropdown.Item href='signIn'>
+                    <span style={navLinkStyle}>Login as Student</span>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href='signInAsAdmin'>
+                    <span style={navLinkStyle}>Login as Administrator</span>
+                  </NavDropdown.Item>
+                </NavDropdown>
                 <Nav.Link href='contactus'><span style={navLinkStyle}>Contanct Us</span> </Nav.Link>
               </Nav>
             </Navbar.Collapse>
