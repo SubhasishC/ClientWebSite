@@ -1,0 +1,14 @@
+[
+        {
+                "name": "Download LInk 1",
+                "link":"download_resources/doc1.pdf"
+        },
+        {
+                "name": "Download LInk 2",
+                "link":"download_resources/doc1.pdf"
+        },
+        {
+                "name": "Download LInk 3",
+                "link":"download_resources/doc1.pdf"
+        }
+]
