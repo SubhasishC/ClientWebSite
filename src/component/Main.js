@@ -10,6 +10,7 @@ import { Login } from './Login'
 import Content from './CourseContent'
 import SignIn from './SignIn'
 import Student from './StudentProfile'
+import PhotoGallery from './Gallery'
 
 const Main = () => (
   <main>
@@ -26,6 +27,7 @@ const Main = () => (
       <Route path='/signIn' component={() => <SignIn name={'Student Login'} />}/>
       <Route path='/signInAsAdmin' component={() => <SignIn name={'Admin Login'} />}/>
       <Route path='/studentProfile' component={Student}/>
+      <Route path='/photogallery' component={PhotoGallery}/>
 
     </Switch>
   </main>
