@@ -16,7 +16,7 @@ import Image from 'react-bootstrap/Image'
 
 const navBarStyle = {
   backgroundColor: "#007bff",
-  padding: "20px"
+  padding: "18px"
 }
 
 const navBarStyle2 = {
@@ -55,18 +55,7 @@ function Navigation () {
                 <Nav.Link href='aboutus'>
                 <span style={navLinkStyle}>About US</span>
                 </Nav.Link>
-                <NavDropdown title={<span style={navLinkStyle}>Download</span>} id='basic-nav-dropdown'>
-                  <NavDropdown.Item href='download_resources/doc1.pdf'>
-                    <span style={navLinkStyle}>DOWNLOAD1</span>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href='download_resources/doc1.pdf'>
-                  <span style={navLinkStyle}>DOWNLOAD2</span>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href='download_resources/doc1.pdf'>
-                  <span style={navLinkStyle}>DOWNLOAD3</span>
-                  </NavDropdown.Item>
-                </NavDropdown>
-                <NavDropdown title={<span style={navLinkStyle}>Program</span>} id='basic-nav-dropdown'>
+                <NavDropdown title={<span style={navLinkStyle}>Course</span>} id='basic-nav-dropdown'>
                   <NavDropdown.Item href='download_resources/doc1.pdf'>
                     <span style={navLinkStyle}>UPSC</span>
                   </NavDropdown.Item>
@@ -79,7 +68,17 @@ function Navigation () {
                   <NavDropdown.Item href='download_resources/doc1.pdf'>
                     <span style={navLinkStyle}>RBI</span>
                   </NavDropdown.Item>
-                  <NavDropdown.Item href='media'>Videos</NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title={<span style={navLinkStyle}>Download</span>} id='basic-nav-dropdown'>
+                  <NavDropdown.Item href='download_resources/doc1.pdf'>
+                    <span style={navLinkStyle}>DOWNLOAD1</span>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href='download_resources/doc1.pdf'>
+                  <span style={navLinkStyle}>DOWNLOAD2</span>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href='download_resources/doc1.pdf'>
+                  <span style={navLinkStyle}>DOWNLOAD3</span>
+                  </NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title={<span style={navLinkStyle}>Enquiries</span>} id='basic-nav-dropdown'>
                   <NavDropdown.Item href='register'>
@@ -90,6 +89,14 @@ function Navigation () {
                   </NavDropdown.Item>
                   <NavDropdown.Item href='faq'>
                     <span style={navLinkStyle}>FAQ</span> 
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title={<span style={navLinkStyle}>Login</span>} id='basic-nav-dropdown'>
+                  <NavDropdown.Item href='signIn'>
+                    <span style={navLinkStyle}>Login as Student</span>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href='signInAsAdmin'>
+                    <span style={navLinkStyle}>Login as Administrator</span>
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href='contactus'><span style={navLinkStyle}>Contanct Us</span> </Nav.Link>

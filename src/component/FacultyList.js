@@ -18,7 +18,7 @@ const  newdata= data.map( ( data) =>{
   }
 )
 
-export default class FacultyInfo extends Component {
+export default class  FacultyInfo extends Component {
     render() {
         return (
             <CardColumns className=" m-3 p-3 owncard ">  {newdata}  </CardColumns>

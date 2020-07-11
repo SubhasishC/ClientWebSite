@@ -26,7 +26,7 @@ function Aboutus() {
             <Col xs={7}>
                 <div style={blockStyle}>
                     <h1 style={headingStyle}>About Lucent Academy</h1>
-                    <p>Best IAS Coaching Centre in Bangalore (LIA) had its inception with the synergies of a group of efficient tutors, which included veteran IAS/IPS/IRS officers, Academics and extraordinary tutors. LIA, as the name suggests, is an outcome of some inspiring work in the field of Civil Services tutoring. As an abode of knowledge, LIA today intends to build on the legacy of its successes and continue to help aspirants realise their dreams of becoming a part of Civil Services community. No doubt, LIA is the Best IAS Academy in Bangalore.</p>
+                    <p>Lucent Institute of Advanced Studies (Lucent IAS) is a coaching institute providing coaching programs for Civil Service Exams conducted by UPSC and APSC as well as other government/semi-government/banking recruitments exams. Started in 2019, the primary goal of Lucent IAS is to produce as many Civil Servants as possible from the North-East region.</p>
                 </div>
             </Col>
             <Col xs={3}>
@@ -39,7 +39,8 @@ function Aboutus() {
             <Col xs={10}>
                 <div style={blockStyle}>
                     <h1 style={headingStyle}>Our Vision</h1>
-                    <p>Best IAS Coaching Centre in Bangalore (LIA) had its inception with the synergies of a group of efficient tutors, which included veteran IAS/IPS/IRS officers, Academics and extraordinary tutors. LIA, as the name suggests, is an outcome of some inspiring work in the field of Civil Services tutoring. As an abode of knowledge, LIA today intends to build on the legacy of its successes and continue to help aspirants realise their dreams of becoming a part of Civil Services community. No doubt, LIA is the Best IAS Academy in Bangalore.</p>
+                    <p>There is no dearth of talent in the region but lack of proper guidance has been a concern for the aspirants. Many aspirants has to move to the cities like Delhi to pursue their dream of clearing exams like UPSC CSE. But not all aspirants can afford the cost and other hurdles associated with it. Then again there is the risk of fraud coaching centres with dubious credentials of faculty members as often heard from the aspirants who feel cheated after taking admission in such institutes.</p>
+                    <p>Being experienced with the preparation of Civil Service Exams, the founders of Lucent IAS are well aware of all the challenges faced by an aspirant during preparation. Quality, Transparency, Affordability and Motivation are the four pillars of Lucent IAS. The experienced faculty members have themselves cleared various National and State Level competitive recruitment exams during their preparation stage and now extending their helping hand to garner talents from the NE region.</p>
                 </div>
             </Col>
         </Row>

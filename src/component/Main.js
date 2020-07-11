@@ -8,6 +8,8 @@ import Registration from './registrationForm'
 import Media from './Media'
 import { Login } from './Login'
 import Content from './CourseContent'
+import SignIn from './SignIn'
+import Student from './StudentProfile'
 
 const Main = () => (
   <main>

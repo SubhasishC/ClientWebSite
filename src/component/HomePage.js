@@ -34,17 +34,20 @@ class HomePage extends React.Component {
                     <SimpleImageSlider
                             style={{ marginTop: "1px" }}
                             width={1296}
-                            height={550}
+                            height={420}
                             images={images}
-                            showBullets={false}
-                            slideDuration={0.5}
+                            showBullets={true}
+                            slideDuration={1}
+                            showNavs={false}
+                            navStyle={1}
+                            useGPURender={true}
                         />
                     </Col>    
                 </Row>        
                 <Row className="justify-content-md-center">
                     <div>
-                        <h2 style={{color: "blue",fontFamily:"sans-serif",textAlign:'center', padding: '10px 10px 10px 10px '}}>Lucent Academy</h2>
-                        <h3>Coaching Institute</h3>
+                        <h1 style={{color: "blue",fontFamily:"sans-serif",textAlign:'center', padding: '10px 10px 10px 10px '}}>Lucent Academy</h1>
+                        <h1>Coaching Academy </h1>
                     </div>
                 </Row>
                 <Row className="justify-content-md-center">

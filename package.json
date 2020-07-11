@@ -7,6 +7,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.10",
     "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -24,6 +25,7 @@
     "react-faq-component": "^1.0.5",
     "react-modal-login": "^1.4.5",
     "react-multi-carousel": "^2.5.5",
+    "react-player": "^2.5.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
@@ -31,7 +33,9 @@
     "react-strap-grid": "^1.0.1",
     "react-swift-slider": "^6.4.0",
     "react-youtube": "^7.11.2",
-    "reactstrap": "^8.4.1"
+    "reactstrap": "^8.4.1",
+    "redux": "^4.0.5",
+    "video-react": "^0.14.1"
   },
   "scripts": {
     "start": "react-scripts start",
