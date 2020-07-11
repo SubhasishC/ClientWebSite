@@ -21,6 +21,10 @@ const Main = () => (
       <Route path='/media' component={Media}/>
       <Route path='/login' component={Login}/>
       <Route path='/apsc' component={Content}/>
+      <Route path='/signIn' component={() => <SignIn name={'Student Login'} />}/>
+      <Route path='/signInAsAdmin' component={() => <SignIn name={'Admin Login'} />}/>
+      <Route path='/studentProfile' component={Student}/>
+
     </Switch>
   </main>
 )

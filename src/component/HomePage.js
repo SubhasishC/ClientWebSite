@@ -28,21 +28,23 @@ class HomePage extends React.Component {
         const h1 = 'Heading';
         const b1 = 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque  tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.';
             return (
-                <div>
-                 {/* <Col fluid xs={12}> */}
+                <Container>
+                <Row className="justify-content-md-center">
+                    <Col>    
                     <SimpleImageSlider
-                            style={{ position: 'left',margin: "0px auto 0px", marginTop: "1px" }}
-                            width={1596}
-                            height={600}
+                            style={{ marginTop: "1px" }}
+                            width={1296}
+                            height={550}
                             images={images}
                             showBullets={false}
                             slideDuration={0.5}
                         />
-                {/* </Col> */}
+                    </Col>    
+                </Row>        
                 <Row className="justify-content-md-center">
                     <div>
-                        <h1 style={{color: "blue",fontFamily:"sans-serif",textAlign:'center', padding: '10px 10px 10px 10px '}}>Lucent Academy</h1>
-                        <h1>It is a great coaching academy </h1>
+                        <h2 style={{color: "blue",fontFamily:"sans-serif",textAlign:'center', padding: '10px 10px 10px 10px '}}>Lucent Academy</h2>
+                        <h3>Coaching Institute</h3>
                     </div>
                 </Row>
                 <Row className="justify-content-md-center">
@@ -76,7 +78,7 @@ class HomePage extends React.Component {
                 <div>
                     <StudentInfo />
                 </div>
-                </div>
+                </Container>
             );
     }
 }
